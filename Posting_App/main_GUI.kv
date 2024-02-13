@@ -1,0 +1,165 @@
+<PostListUnit>
+    BoxLayout:
+        Label:
+            id: writer
+            size_hint_x: 0.25
+            text_size: 150, 50
+            shorten: True
+            shorten_from: 'right'
+        Button:
+            id: content
+            size_hint_x: 0.5
+            text_size: 500, 50
+            shorten: True
+            shorten_from: 'right'
+            on_press: root.goto_post_screen()
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: 0.25
+            Label:
+                id: first_date
+            Label:
+                id: latest_date
+
+<ReplyListUnit>
+    BoxLayout:
+        text: ' '
+
+<InputWriterPopup>
+    title: "Input Writer's name."
+    size_hint_y: 0.3
+    auto_dismiss: False
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id: writer
+        BoxLayout:
+            Button:
+                text: 'Input!'
+                on_press: root.close()
+            Button:
+                text: 'Refuse'
+                on_press: root.refuse()
+
+
+<PostListScreen>
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: 0.1
+            Label:
+                size_hint_x: 0.75
+            Button:
+                text: 'Write\nnew post'
+                size_hint_x: 0.25
+                on_press: root.goto_postedit_screen()
+        BoxLayout:
+            size_hint_y: 0.1
+            Label:
+                text: 'writer'
+                size_hint_x: 0.25
+            Label:
+                text: 'content'
+                size_hint_x: 0.5
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint_x: 0.25
+                Label:
+                    text: 'first write'
+                Label:
+                    text: 'latest write'
+        RecycleView:
+            id: postlist
+            size_hint_y: 0.8
+            viewclass: 'PostListUnit'
+            RecycleBoxLayout:
+                orientation: 'vertical'
+                default_size: None, dp(60)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+
+<PostScreen>
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: 0.1
+            Label:
+                size_hint_x: 0.5
+            Button:
+                text: 'Edit'
+                size_hint_x: 0.25
+                on_press: root.goto_postedit_screen()
+            Button:
+                text: 'Go Back'
+                size_hint_x: 0.25
+                on_press: root.goto_postlist_screen()
+        BoxLayout:
+            size_hint_y: 0.1
+            Label:
+                id: writer
+                text: 'writer :'
+                size_hint_x: 0.3
+            Label:
+                id: first_date
+                text: 'first write date :'
+                size_hint_x: 0.3
+            Label:
+                id: latest_date
+                text: 'latest write date :'
+                size_hint_x: 0.3
+        Label:
+            id: content
+            color: 0, 0, 0, 1
+            size_hint_y: 0.4
+            canvas.before:
+                Color:
+                    rgba: 1, 1, 1, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+        RecycleView:
+            id: replylist
+            size_hint_y: 0.4
+            viewclass: 'ReplyListUnit'
+            RecycleBoxLayout:
+                orientation: 'vertical'
+                default_size: None, dp(60)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+
+<PostEditScreen>
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: 0.1
+            Label:
+                size_hint_x: 0.5
+            Button:
+                text: 'Upload'
+                size_hint_x: 0.25
+                on_press: root.upload()
+            Button:
+                text: 'Go Back'
+                size_hint_x: 0.25
+                on_press: root.goback()
+        BoxLayout:
+            size_hint_y: 0.1
+            Label:
+                id: writer
+                text: 'writer :'
+                size_hint_x: 0.3
+            Label:
+                id: first_date
+                text: 'first write date :'
+                size_hint_x: 0.3
+            Label:
+                id: latest_date
+                text: 'latest write date :'
+                size_hint_x: 0.3
+        TextInput:
+            id: content
+            size_hint_y: 0.4
+        Label:
+            size_hint_y: 0.4

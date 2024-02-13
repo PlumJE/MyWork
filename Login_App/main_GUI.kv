@@ -1,0 +1,78 @@
+<LoginScreen>:
+    titleimage: titleimage
+    loginWin: loginWin
+    regWin: regWin
+    nickname1: nickname1
+    password1: password1
+    nickname2: nickname2
+    mailaddr: mailaddr
+    password2: password2
+    pswdagain: pswdagain
+    Button:
+        id: titleimage
+        size: root.height, root.width
+        background_normal: "login_image.jpg"
+        background_down: "login_image.jpg"
+    GridLayout:
+        id: loginWin
+        cols: 2
+        size_hint: 1, 0.2
+        background_color: "white"
+        Label:
+            text: "Nickname:"
+            width: 100
+            color: "black"
+        TextInput:
+            id: nickname1
+        Label:
+            text: "Password:"
+            width: 100
+            color: "black"
+        TextInput:
+            id: password1
+        Button:
+            id: loginbtn
+            text: "Login!"
+            on_press: root.login()
+        Button:
+            text: "Register"
+            on_press: root.showRegWin()
+    GridLayout:
+        id: regWin
+        cols: 2
+        size_hint: 1, 0.4
+        background_color: "white"
+        Label:
+            text: "Input nickname:"
+            width: 100
+            color: "black"
+        TextInput:
+            id: nickname2
+        Label:
+            text: "Input mail address:"
+            width: 100
+            color: "black"
+        TextInput:
+            id: mailaddr
+        Label:
+            text: "Input password:"
+            width: 100
+            color: "black"
+        TextInput:
+            id: password2
+        Label:
+            text: "Input password again:"
+            width: 100
+            color: "black"
+        TextInput:
+            id: pswdagain
+        Button:
+            text: "To login window"
+            on_press: root.showLoginWin()
+        Button:
+            text: "Register!"
+            on_press: root.register()
+
+<MainScreen>:
+    Image:
+        source: "main_image.jpg"
