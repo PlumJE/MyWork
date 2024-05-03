@@ -1,0 +1,154 @@
+GL: NPOT texture support is available
+Base: Start application main loop
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+usernum : 0 -> 1
+parent post num :  -> 
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+target_str : leejieung
+target_str : lje64257@gmail.com
+target_str : dlwldmd
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+target_str : leejieung
+target_str : lje64257@gmail.com
+target_str : dlwldmd
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+target_str : leejieung
+target_str : lje64257@gmail.com
+target_str : dlwldmd
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+target_str : leejieung
+target_str : lje64257@gmail.com
+target_str : dlwldmd
+isValidStr returns True
+isValidMailaddr returns True
+isSamePassword returns True
+It seems you are not registered.
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+target_str : leejieung
+target_str : lje64257@gmail.com
+target_str : dlwldmd
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+target_str : lje
+target_str : lje64257@gmail.com
+target_str : dlwldmd
+그냥 리턴으로 종료
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+target_str : leejieung
+target_str : lje64257@gmail.com
+target_str : dlwldmd
+Base: Leaving application in progress...
+Traceback (most recent call last):
+  File "C:\KivyApk\Login_Posting\main.py", line 30, in <module>
+    LoginPostingApp().run()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+    runTouchApp()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+    EventLoop.mainloop()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+    self.idle()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+    self.dispatch_input()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+    post_dispatch_input(*pop(0))
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+    wid.dispatch('on_touch_up', me)
+  File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+    self.dispatch('on_release')
+  File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+  File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "C:\KivyApk\Login_Posting\GUIfiles\login_screen_GUI.kv", line 70, in <module>
+    on_release: root.register()
+    ^^^^^^^^^^^^^^^
+  File "C:\KivyApk\Login_Posting\login_screen.py", line 30, in register
+    if self.isInvalidStr() or self.isInvalidMailaddr() and self.isDifferentPassword() and self.isAlreadyRegistered():
+                              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RegisterWindow' object has no attribute 'isInvalidMailaddr'
+
+GL: NPOT texture support is available
+Base: Start application main loop
+target_str : leejieung
+target_str : lje64257@gmail.com
+target_str : dlwldmd
+usernum : 0 -> 1
+parent post num :  -> 
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+usernum : 0 -> 1
+parent post num :  -> 
+parent post num :  -> 
+usernum : 1 -> 0
+parent post num :  -> 
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+usernum : 0 -> 1
+parent post num :  -> 
+Search log is : ['', '/0']
+parent post num :  -> /0
+Search log is : ['', '/0', '/0/2']
+parent post num : /0 -> /0/2
+Search log is : ['', '/0', '/0/2', '/0/2/0']
+parent post num : /0/2 -> /0/2/0
+parent post num : /0/2/0 -> /0/2
+parent post num : /0/2 -> /0
+parent post num : /0 -> 
+parent post num :  -> /0
+parent post num : /0 -> /0/2
+parent post num : /0/2 -> /0/2/0
+parent post num : /0/2/0 -> /0/2
+parent post num : /0/2 -> /0
+parent post num : /0 -> 
+parent post num :  -> 
+Base: Leaving application in progress...
+
+GL: NPOT texture support is available
+Base: Start application main loop
+usernum : 0 -> 1
+parent post num :  -> 
+Base: Leaving application in progress...
+

@@ -1,0 +1,69 @@
+<PostUnit>
+    orientation: 'vertical'
+    on_release: root.updateposts()
+    size_hint: 1, None
+    background_color: 1, 1, 1, 0.5
+    BoxLayout:
+        size_hint_y: 0.2
+        Label:
+            id: writer
+            text: 'Writer : '
+            color: 'black'
+        Label:
+            id: writedate
+            text: 'Write date : '
+            color: 'black'
+    Label:
+        id: content
+        size_hint_y: None
+        color: 'black'
+
+<PostScreen>
+    Image:
+        size_hint: 1, 1
+        source: root.bg_path
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: 0.1
+            canvas.before:
+                Color:
+                    rgba: 1, 1, 1, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                Color:
+                    rgba: 0, 0.5, 1, 1
+                Line:
+                    width: 1.5
+                    rectangle: self.x, self.y, self.width, self.height
+            Label:
+                id: welcome_message
+                text: ''
+                color: 'black'
+            Button:
+                id: home_btn
+                text: 'Go Home'
+                on_release: root.updateposts()
+            Button:
+                id: settings_btn
+                text: 'Settings'
+                on_release: root.goto_setting_screen()
+        ScrollView:
+            size_hint_y: 0.8
+            do_scroll_x: False
+            do_scroll_y: True
+            BoxLayout:
+                id: body
+                orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: 0.1
+            Button:
+                text: 'Write new post'
+                on_release: root.goto_edit_screen()
+            Button:
+                text: 'Prev'
+                on_release: root.go_prev()
+            Button:
+                text: 'Next'
+                on_release: root.go_next()

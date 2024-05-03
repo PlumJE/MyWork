@@ -1,0 +1,142 @@
+#:import bg_folder folder_paths.bg_folder
+
+<MainScreen>
+    name: "Main Screen"
+    Image:
+        id: bg
+        source: bg_folder + "main_image.jpg"
+        pos_hint: {"anchor_x":"center", "anchor_y":"center"}
+        size_hint: 1, 1
+        allow_strech: True
+        keep_ratio: False
+
+<StageScreen>
+    name: "Stage Screen"
+    BoxLayout:
+        orientation: "vertical"
+        RecycleView:
+            id: stage_tabbar
+            size_hint_y: 0.15
+            viewclass: 'Button'
+            RecycleBoxLayout:
+                orientation: 'horizontal'
+                height: self.minimum_height
+        ScreenManager:
+            id: stage_screen_manager
+
+<CharacterScreen>
+    name: "Character Screen"
+    Image:
+        id: bg
+        source: bg_folder + "character_background.jpg"
+        pos_hint: {"anchor_x":"center", "anchor_y":"center"}
+        size_hint: 1, 1
+        allow_strech: True
+        keep_ratio: False
+
+<GachaScreen>
+    name: "Gacha Screen"
+    Image:
+        id: bg
+        source: bg_folder + "gacha_background.jpg"
+        pos_hint: {"anchor_x":"center", "anchor_y":"center"}
+        size_hint: 1, 1
+        allow_strech: True
+        keep_ratio: False
+    Button:
+        text: "Gacha!(10 Jewels)"
+        pos_hint: {"center_x":0.5, "top":0.2}
+        size_hint: 0.5, 0.1
+        on_release: root.gacha()
+
+<OptionScreen>
+    name: "Option Screen"
+    Image:
+        id: bg
+        source: bg_folder + "gacha_background.jpg"
+        allow_strech: True
+        keep_ratio: False
+    GridLayout:
+        cols: 3
+        pos_hint: {"center_x":0.5, "center_y":0.5}
+        size_hint: 0.75, 0.75
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 0.5
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Label:
+            text: "User ID :"
+            color: "black"
+        Label:
+            id: useridlbl
+            color: "black"
+        Button:
+            id: logoutbtn
+            text: "Logout"
+            on_release: root.logout()
+        Label:
+            text: "Your Language :"
+            color: "black"
+        Label:
+            id: userlanglbl
+            color: "black"
+        Button:
+            id: userlangchangebtn
+            text: "Change Language"
+            on_release: root.showLangChanWin()
+
+<LangChanWin>
+    orientation: "vertical"
+    Button:
+        text: "X"
+        on_release: root.close()
+    Label:
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        text: "Choose your language"
+        color: "black"
+
+<GameScreen>
+    name: "Game Screen"
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            id: statusbar
+            orientation: "horizontal"
+            size_hint: 1, 0.05
+            Label:
+                id: moneylabel
+                text: "Money:"
+                color: "black"
+            Label:
+                id: jewellabel
+                text: "Jewel:"
+                color: "black"
+        ScreenManager:
+            id: game_screen_manager
+        BoxLayout:
+            id: tabbar
+            orientation: "horizontal"
+            size_hint: 1, None
+            height: "48dp"
+            Button:
+                text: "Main"
+                on_release: root.showMainScreen()
+            Button:
+                text: "Stage"
+                on_release: root.showStageScreen()
+            Button:
+                text: "Character"
+                on_release: root.showCharacterScreen()
+            Button:
+                text: "Gacha"
+                on_release: root.showGachaScreen()
+            Button:
+                text: "Option"
+                on_release: root.showOptionScreen()

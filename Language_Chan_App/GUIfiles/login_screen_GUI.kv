@@ -1,0 +1,109 @@
+#:import bg_folder folder_paths.bg_folder
+
+<LoginWin>
+    cols: 2
+    size_hint: 1, 0.2
+    pos_hint: {"top":0.5}
+    Label:
+        text: "Nickname:"
+        width: 100
+        color: "black"
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 0.5
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    TextInput:
+        id: nickname
+    Label:
+        text: "Password:"
+        width: 100
+        color: "black"
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 0.5
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    TextInput:
+        id: password
+    Button:
+        id: loginbutton
+        text: "Login"
+        on_release: root.login()
+    Button:
+        id: regbutton
+        text: "Register"
+        on_release: root.showRegwin()
+
+<RegWin>
+    cols: 2
+    size_hint: 1, 0.4
+    pos_hint: {"top":0.5}
+    Label:
+        text: "Make nickname:"
+        width: 100
+        color: "black"
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 0.5
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    TextInput:
+        id: nickname
+    Label:
+        text: "Input mail address:"
+        width: 100
+        color: "black"
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 0.5
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    TextInput:
+        id: mailaddr
+    Label:
+        text: "Set password:"
+        width: 100
+        color: "black"
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 0.5
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    TextInput:
+        id: password
+    Label:
+        text: "Password again?"
+        width: 100
+        color: "black"
+        canvas.before:
+            Color:
+                rgba: 1, 1, 1, 0.5
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    TextInput:
+        id: pwagain
+    Button:
+        id: exitButton
+        text: "Exit"
+        on_release: root.showLoginWin()
+    Button:
+        id: regbutton
+        text: "Register me!"
+        on_release: root.register()
+
+<LoginScreen>
+    name: "Login Screen"
+    Button:
+        id: titlebutton
+        pos_hint: {"anchor_x":"center", "anchor_y":"center"}
+        size_hint: 1, 1
+        background_normal: bg_folder + "title_image.jpg"
+        background_down: bg_folder + "title_image.jpg"
+        on_press: root.showLoginWin()
