@@ -152,3 +152,7 @@ usernum : 0 -> 1
 parent post num :  -> 
 Base: Leaving application in progress...
 
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+

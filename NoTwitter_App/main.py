@@ -15,7 +15,7 @@ from setting_screen import settingscreen
 from others import logger
 from traceback import format_exc
 
-class LoginPostingApp(App):
+class NotwitterApp(App):
     screen_manager = ScreenManager()
     # 앱 전체를 만들어서 리턴한다
     def build(self):
@@ -27,7 +27,7 @@ class LoginPostingApp(App):
 
 if __name__ == "__main__":
     try:
-        LoginPostingApp().run()
+        NotwitterApp().run()
         logger.info("")
     except:
         logger.critical(format_exc())
