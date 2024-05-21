@@ -3,6 +3,6 @@
 db_folder = 'databases/'
 graphics_folder = 'graphics/'
 bg_folder = graphics_folder + 'background/'
-chara_folder = graphics_folder + 'characters/'
+charas_folder = graphics_folder + 'charas/'
 enemies_folder = graphics_folder + 'enemies/'
 GUI_folder = 'GUIfiles/'

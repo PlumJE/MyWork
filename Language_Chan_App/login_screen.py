@@ -6,6 +6,7 @@ from kivy.uix.popup import Popup
 
 from db_interface import userDBinter
 from folder_paths import GUI_folder
+from others import cur_usernum
 
 Builder.load_file(GUI_folder + 'login_screen_GUI.kv')
 
@@ -14,9 +15,10 @@ class LoginWin(GridLayout):
         if self.ids.nickname.text == '' or self.ids.password.text == '':
             return
         result = userDBinter.login(self.ids.nickname.text, self.ids.password.text)
-        if result == False:
+        if result == []:
             Popup(title="Login Error", content=Label(text="Sorry, we can't find your account :("), size_hint=(1, 0.2), auto_dismiss=True).open()
         else:
+            cur_usernum.set(result[0][0])
             loginscreen.goto_gamescreen()
     def showRegwin(self):
         loginscreen.showRegWin()
