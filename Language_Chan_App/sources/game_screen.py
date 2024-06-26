@@ -62,7 +62,7 @@ gachascreen = GachaScreen()
 
 class OptionScreen(Screen):
     def on_pre_enter(self, *args):
-        self.ids.useridlbl.text = cur_usernum.get()
+        self.ids.useridlbl.text = str(cur_usernum.get())
         return super().on_pre_enter(*args)
     def logout(self):
         self.ids.useridlbl.text = str(cur_usernum.init())

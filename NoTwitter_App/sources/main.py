@@ -15,6 +15,8 @@ from setting_screen import settingscreen
 from others import logger
 from traceback import format_exc
 
+Window.clearcolor = (1, 1, 1, 1)
+
 class NotwitterApp(App):
     screen_manager = ScreenManager()
     # 앱 전체를 만들어서 리턴한다

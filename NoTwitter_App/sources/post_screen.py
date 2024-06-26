@@ -63,11 +63,12 @@ class PostScreen(Screen):
             self.ids.body.clear_widgets()
         # parent가 ''이면 공지사항 게시글을 맨 위에 추가한다
         if (parent == ''):
-            self.ids.body.add_widget(PostUnit('', 0, '2000-01-01', "Welcome to this app!\n \
-                                              This is copycat of twitter-current day X-,\n \
-                                              but this app cannot edit or delete your post,\n \
-                                              except the administator can delete post content.\n \
-                                              Post carefully!"))
+            self.ids.body.add_widget(PostUnit('', 0, '2000-01-01', 
+"""Welcome to this app!
+This is copycat of twitter(current day X),
+but this app cannot edit or delete your post,
+except the administator can delete post content.
+Post carefully!"""))
         appregister.curparent(parent)
         postlists = dbinterface.selectPosts(parent)
         if postlists == None:
