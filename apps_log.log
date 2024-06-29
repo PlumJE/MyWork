@@ -82,3 +82,12 @@ Deprecated property "<BooleanProperty name=allow_stretch>" of object "<kivy.uix.
 GL: NPOT texture support is available
 Base: Start application main loop
 Base: Leaving application in progress...
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Deprecated property "<BooleanProperty name=keep_ratio>" of object "<kivy.uix.image.Image object at 0x00000219E47BF380>" was accessed, it will be removed in a future version
+Deprecated property "<BooleanProperty name=allow_stretch>" of object "<kivy.uix.image.Image object at 0x00000219E47BF380>" was accessed, it will be removed in a future version
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
