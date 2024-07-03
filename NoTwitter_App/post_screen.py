@@ -2,6 +2,7 @@ from kivy.lang import Builder
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
+from kivy.uix.behaviors import ButtonBehavior
 
 from others import dbinterface, appregister, logger
 from folder_paths import GUI_folder, graphics_folder
@@ -33,18 +34,22 @@ class SearchLog:
 searchlog = SearchLog()
 
 # 게시글 유닛 클래스
-class PostUnit(BoxLayout, Button):
+class PostUnit(ButtonBehavior, BoxLayout):
     # 게시글에 게시글id, 작성자id, 작성날짜, 내용을 입력해 게시글 유닛을 생성한다
     def __init__(self, id, writer, writedate, content, **kwargs):
-        super().__init__(**kwargs)
+        super(PostUnit, self).__init__(**kwargs)
         self.id = id
         username = dbinterface.selectByUsernum(writer)
-        username = "This App" if username == None else username[0]
+        if username == None:
+            username = 'Not Twitter Official'
+        else:
+            username = username[0]
         self.ids.writer.text += username
         self.ids.writedate.text += writedate
         self.ids.content.text = content
     # 게시글을 클릭하면 해당 게시글과 그것의 자식 게시글들을 소환한다. 다만 공지사항을 클릭하면 작동하지 않는다
     def updateposts(self, *args):
+        # 공지사항 게시글 유닛인 경우...
         if self.id != '':
             searchlog.add(self.id)
             postscreen.updateposts(self.id, *args)
@@ -65,7 +70,7 @@ class PostScreen(Screen):
         if (parent == ''):
             self.ids.body.add_widget(PostUnit('', 0, '2000-01-01', 
 """Welcome to this app!
-This is copycat of twitter(current day X),
+This is copycat of Twitter(current day X),
 but this app cannot edit or delete your post,
 except the administator can delete post content.
 Post carefully!"""))

@@ -3,7 +3,6 @@
     size_hint_y: None
     orientation: 'vertical'
     on_release: root.updateposts()
-    background_color: 1, 1, 1, 0
     canvas:
         Color:
             rgba: 0.9, 0.9, 0.9, 0.75
@@ -71,11 +70,15 @@
                 text: 'Settings'
                 on_release: root.goto_setting_screen()
         ScrollView:
+            size_hint_x: 0.9
             size_hint_y: 0.8
+            pos_hint: {'center_x':0.5, 'center_y':0.5}
             do_scroll_x: False
             do_scroll_y: True
             BoxLayout:
                 id: body
+                size_hint_y: None
+                height: self.minimum_height
                 orientation: 'vertical'
         BoxLayout:
             size_hint_y: 0.1

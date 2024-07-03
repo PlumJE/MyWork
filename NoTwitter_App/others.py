@@ -32,14 +32,14 @@ class AppRegister:
         if usernum == None:
             return self.__usernum
         else:
-            logger.info("usernum : {} -> {}".format(self.__usernum, usernum))
+            #logger.info("usernum : {} -> {}".format(self.__usernum, usernum))
             self.__usernum = usernum
     # 지금 당장의 부모 게시글의 id를 다루는 획설자이다.
     def curparent(self, curparent=None):
         if curparent == None:
             return self.__curparent
         else:
-            logger.info("parent post num : {} -> {}".format(self.__curparent, curparent))
+            #logger.info("parent post num : {} -> {}".format(self.__curparent, curparent))
             self.__curparent = curparent
 appregister = AppRegister()
 
@@ -53,15 +53,14 @@ class DBInterface:
                          PRIMARY KEY('number'));")
         self.cur.execute("CREATE TABLE IF NOT EXISTS PostInfo(id TEXT NOT NULL UNIQUE, writer INT, writedate DATE, content TEXT, \
                          PRIMARY KEY('id'));")
-        self.cur.execute("INSERT OR IGNORE INTO PostInfo VALUES('/0', 0, '2000-01-01', 'Welcome!!');")
     # 데이터베이스와의 접속 종료
     def __del__(self):
         self.cur.close()
         self.conn.close()
     # 예외상황을 처리하는 메소드
     def handleError(self, err, rtn=None):
-        logger.error("We have an error in this query : {}".format(err))
-        logger.error("We will return {}".format(rtn))
+        #logger.error("We have an error in this query : {}".format(err))
+        #logger.error("We will return {}".format(rtn))
         return rtn
     # 닉네임과 패스워드를 통해 유저 번호를 select
     def selectByNickPswd(self, nickname, password):
