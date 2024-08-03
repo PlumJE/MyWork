@@ -1,0 +1,1002 @@
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : 
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 			
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : Insert characters you wanna exclude
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : 
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : 
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+char is +
+char is -
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#
+char is !
+char is @
+char is #
+pswd candidates : abcdefghijklmnopqrstuvwxyz!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#
+char is !
+char is @
+char is #
+candidates are abcdefghijklmnopqrstuvwxyz!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+pswd candidates : abcdefghijklmnopqrstuvwxyz!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : Insert characters you wanna exclude
+char is I
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is n
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is s
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is e
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is r
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is t
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is  
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is c
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is h
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is a
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is r
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is a
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is c
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is t
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is e
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is r
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is s
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is  
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is y
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is o
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is u
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is  
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is w
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is a
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is n
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is n
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is a
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is  
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is e
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is x
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is c
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is l
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is u
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is d
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is e
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : Insert characters you wanna exclude
+Base: Leaving application in progress...
+Traceback (most recent call last):
+  File "C:\KivyDojo\PswdMaker_App\main.py", line 98, in <module>
+    PswdMakerApp().run()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+    runTouchApp()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+    EventLoop.mainloop()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+    self.idle()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+    self.dispatch_input()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+    post_dispatch_input(*pop(0))
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+    wid.dispatch('on_touch_up', me)
+  File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+    self.dispatch('on_release')
+  File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+  File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "C:\KivyDojo\PswdMaker_App\main_GUI.kv", line 35, in <module>
+    on_release: root.generate_password()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\KivyDojo\PswdMaker_App\main.py", line 75, in generate_password
+    pswd_candidates = self.exclude_candidates(pswd_candidates)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\KivyDojo\PswdMaker_App\main.py", line 51, in exclude_candidates
+    logger.info("candidates are "+type(candidates))
+                ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "type") to str
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : Insert characters you wanna exclude
+char is I
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is n
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is s
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is e
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is r
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is t
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is  
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is c
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is h
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is a
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is r
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is a
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is c
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is t
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is e
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is r
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is s
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is  
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is y
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is o
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is u
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is  
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is w
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is a
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is n
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is n
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is a
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is  
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is e
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is x
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is c
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is l
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is u
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is d
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+char is e
+candidates are abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : Insert characters you wanna exclude
+pswd candidates :  b   fg ijk m  pq    v   z0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : Insert characters you wanna exclude
+pswd candidates : bfgijkmpqvz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : Insert characters you wanna exclude
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : +-
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*,./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Clipboard: Provider: winctypes
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+Traceback (most recent call last):
+  File "C:\KivyDojo\PswdMaker_App\main.py", line 95, in <module>
+    PswdMakerApp().run()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+    runTouchApp()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+    EventLoop.mainloop()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+    self.idle()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+    self.dispatch_input()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+    post_dispatch_input(*pop(0))
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+    wid.dispatch('on_touch_up', me)
+  File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+    self.dispatch('on_release')
+  File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+  File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "C:\KivyDojo\PswdMaker_App\main_GUI.kv", line 37, in <module>
+    on_release: root.generate_password()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\KivyDojo\PswdMaker_App\main.py", line 84, in generate_password
+    password = ''.join(sample(pswd_candidates, length))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\random.py", line 456, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+Traceback (most recent call last):
+  File "C:\KivyDojo\PswdMaker_App\main.py", line 95, in <module>
+    PswdMakerApp().run()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+    runTouchApp()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+    EventLoop.mainloop()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+    self.idle()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+    self.dispatch_input()
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+    post_dispatch_input(*pop(0))
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+    wid.dispatch('on_touch_up', me)
+  File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+    self.dispatch('on_release')
+  File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+  File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "C:\KivyDojo\PswdMaker_App\main_GUI.kv", line 37, in <module>
+    on_release: root.generate_password()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\KivyDojo\PswdMaker_App\main.py", line 84, in generate_password
+    password = ''.join(sample(pswd_candidates, length))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\random.py", line 456, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : 
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$
+pswd candidates : ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"%&'()*+,-./:;<=>?[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : asdf
+pswd candidates : bceghijklmnopqrtuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Base: Leaving application in progress...
+
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: GLEW initialization succeeded
+GL: Backend used <glew>
+GL: OpenGL version <b'4.6.0 - Build 27.20.100.9415'>
+GL: OpenGL vendor <b'Intel'>
+GL: OpenGL renderer <b'Intel(R) Iris(R) Xe Graphics'>
+GL: OpenGL parsed version: 4, 6
+GL: Shading version <b'4.60 - Build 27.20.100.9415'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$%^&*()
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789"'+,-./:;<=>?[\]_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$%^&*()
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789"'+,-./:;<=>?[\]_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$%^&*()
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789"'+,-./:;<=>?[\]_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$%^&*()
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789"'+,-./:;<=>?[\]_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$%^&*()
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789"'+,-./:;<=>?[\]_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$%^&*()
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789"'+,-./:;<=>?[\]_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$%^&*()
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789"'+,-./:;<=>?[\]_`{|}~
+include : abcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+exclude : !@#$%^&*()
+pswd candidates : abcdefghijklmnopqrstuvwxyz0123456789"'+,-./:;<=>?[\]_`{|}~
+Base: Leaving application in progress...
+
