@@ -21,7 +21,7 @@ class ChangeNickPopup(Popup):
         #     return
         usersdbinterface.put_nickname(new_nick)
         settingscreen.update_nickname()
-        logger.info("The user changed its nickname!")
+        logger.info('Changing nickname succeed!')
         self.dismiss()
     # 닉네임 변경을 포기한다
     def discard(self, *args):

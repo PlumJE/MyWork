@@ -13,6 +13,7 @@ from login_screen import loginscreen
 from post_screen import postscreen
 from edit_screen import editscreen
 from setting_screen import settingscreen
+from debug import logger
 
 
 Window.clearcolor = (1, 1, 1, 1)
@@ -28,4 +29,7 @@ class NotTwitterApp(App):
         return self.screen_manager
 
 if __name__ == "__main__":
-    NotTwitterApp().run()
+    try:
+        NotTwitterApp().run()
+    except Exception as e:
+        logger.critical('Leathal error has occurred!! ' + str(e))

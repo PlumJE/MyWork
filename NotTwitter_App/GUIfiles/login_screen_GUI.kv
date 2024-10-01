@@ -22,14 +22,14 @@
         id: password1
     Button:
         id: loginbtn
-        text: "Login!"
+        text: "Login"
         on_release: root.login()
     Button:
-        text: "Register"
-        on_release: root.showRegWin()
+        text: "Signup"
+        on_release: root.showSignupWin()
 
-<RegisterWindow>
-    id: regWin
+<SignupWindow>
+    id: SignupWin
     cols: 2
     size_hint: 1, 0.3
     canvas.before:
@@ -66,8 +66,8 @@
         text: "To login window"
         on_release: root.showLoginWin()
     Button:
-        text: "Register!"
-        on_release: root.register()
+        text: "Signup"
+        on_release: root.signup()
 
 <LoginScreen>
     Image:

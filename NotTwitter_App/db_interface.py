@@ -3,6 +3,8 @@ from kivy.uix.label import Label
 from requests.exceptions import RequestException
 import requests
 
+from debug import logger
+
 
 # 응답 코드를 저장한 예외 클래스
 class ResponseException(RequestException):
@@ -27,8 +29,10 @@ class DBInterface:
                 case _:
                     raise ResponseException(response.status_code, response.json().get('error'))
         except ResponseException as e:
+            logger.error(str(e))
             return e
         except Exception as e:
+            logger.error(str(e))
             return ResponseException(499, 'Internal client error')
     def _post(self, url, headers={}, data={}):
         return self.__execute(requests.post, url, headers, data)
@@ -126,7 +130,6 @@ class UsersDBInterface(DBInterface):
         response = self._get(url, headers=headers)
 
         if type(response) == ResponseException:
-            print('Nickname not founded!!!!!')
             return Popup(
                 title='Database error has occurred!',
                 size_hint=(1, 0.2),
@@ -145,7 +148,6 @@ class UsersDBInterface(DBInterface):
         response = self._put(url, headers=headers, data=data)
 
         if type(response) == ResponseException:
-            print('nickname change failed!!!')
             return Popup(
                 title='Database error has occurred!',
                 size_hint=(1, 0.2),

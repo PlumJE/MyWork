@@ -13,7 +13,7 @@ from kivy.uix.screenmanager import ScreenManager
 from login_screen import loginscreen
 from game_screen import gamescreen
 from lesson_screen import lessonscreen
-from debug import log
+from debug import logger
 
 Window.clearcolor = (1, 1, 1, 1)
 Window.size = (375, 750)    # 내 폰(갤럭시 퀀텀)과 비슷하게 기준잡음
@@ -32,5 +32,6 @@ languagechanapp = LanguageChanApp()
 if __name__ == "__main__":
     try:
         languagechanapp.run()
-    except Exception as error:
-        log.ger.info(error)
+    except Exception as e:
+        logger.critical(str(e))
+    logger.info('\n\n')

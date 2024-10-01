@@ -21,7 +21,7 @@ class SearchLog:
             del self.logs[self.ptr + 1:]
         self.logs.append(log)
         self.ptr += 1
-        logger.info("Search log is : " + str(self.logs))
+        logger.debug("Search log is : " + str(self.logs))
     # 스택의 이전 요소로 간다
     def prev(self):
         if self.ptr > 0:
