@@ -1,1 +1,0 @@
-INSERT INTO UsersItem(usernum, money, jewel) VALUES(1, 100, 10);

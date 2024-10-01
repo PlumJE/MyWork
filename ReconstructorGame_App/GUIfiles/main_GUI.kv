@@ -1,0 +1,16 @@
+<MainScreen>:
+    FloatLayout:
+        Image:
+            source: root.bg_img
+        Button:
+            text: 'start game'
+            on_release: root.game_start()
+
+<GameOverScreen>:
+    Image:
+        source: ''
+        allow_stretch: True
+    Button:
+        text: 'Back to start'
+        color: 'brown'
+        on_release: self.game_restart()

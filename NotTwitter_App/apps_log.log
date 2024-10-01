@@ -1,0 +1,953 @@
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 13, in <module>
+stderr:     from post_screen import postscreen
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 7, in <module>
+stderr:     from debug import dbinterface, appregister, logger
+stderr: ImportError: cannot import name 'dbinterface' from 'debug' (D:\MyWork\NotTwitter_App\debug.py)
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 14, in <module>
+stderr:     from edit_screen import editscreen
+stderr:   File "D:\MyWork\NotTwitter_App\edit_screen.py", line 12, in <module>
+stderr:     Builder.load_file(GUI_folder + 'edit_screen_GUI.kv')
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 303, in load_file
+stderr:     with open(filename, 'r', encoding=encoding) as fd:
+stderr:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr: FileNotFoundError: [Errno 2] No such file or directory: 'D:\\MyWork\\NotTwitter_App/GUIfilesedit_screen_GUI.kv'
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 15, in <module>
+stderr:     from setting_screen import settingscreen
+stderr:   File "D:\MyWork\NotTwitter_App\setting_screen.py", line 5, in <module>
+stderr:     from debug import dbinterface, appregister, logger
+stderr: ImportError: cannot import name 'dbinterface' from 'debug' (D:\MyWork\NotTwitter_App\debug.py)
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp.run()
+stderr: TypeError: App.run() missing 1 required positional argument: 'self'
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 18, in login
+stderr:     result = usersdbinterface.login()
+stderr:              ^^^^^^^^^^^^^^^^^^^^^^^^
+stderr: TypeError: UsersDBInterface.login() missing 2 required positional arguments: 'nickname' and 'password'
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "kivy\properties.pyx", line 961, in kivy.properties.ObservableDict.__getattr__
+stderr: KeyError: 'nickname'
+stderr: 
+stderr: During handling of the above exception, another exception occurred:
+stderr: 
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 18, in login
+stderr:     nickname = self.ids.nickname.text
+stderr:                ^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 964, in kivy.properties.ObservableDict.__getattr__
+stderr: AttributeError: 'super' object has no attribute '__getattr__'. Did you mean: '__setattr__'?
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 59, in on_pre_enter
+stderr:     self.ids.welcome_message.text = 'Welcome, ' + username + '!'
+stderr:                                     ~~~~~~~~~~~~^~~~~~~~~~
+stderr: TypeError: can only concatenate str (not "Popup") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\post_screen_GUI.kv", line 87, in <module>
+stderr:     on_release: root.goto_edit_screen()
+stderr: ^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 103, in goto_edit_screen
+stderr:     self.manager.current = 'Edit Screen'
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\edit_screen.py", line 21, in on_pre_enter
+stderr:     self.writer = usersdbinterface.get_username()
+stderr:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr: AttributeError: 'UsersDBInterface' object has no attribute 'get_username'. Did you mean: 'get_nickname'?
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\post_screen_GUI.kv", line 87, in <module>
+stderr:     on_release: root.goto_edit_screen()
+stderr: ^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 103, in goto_edit_screen
+stderr:     self.manager.current = 'Edit Screen'
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\edit_screen.py", line 23, in on_pre_enter
+stderr:     self.ids.writer.text = 'Writer : ' + self.writer
+stderr:                            ~~~~~~~~~~~~^~~~~~~~~~~~~
+stderr: TypeError: can only concatenate str (not "Popup") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\post_screen_GUI.kv", line 67, in <module>
+stderr:     on_release: root.updateposts()
+stderr: ^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 76, in updateposts
+stderr:     self.ids.body.add_widget(PostUnit('', 0, '2000-01-01', 
+stderr:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 44, in __init__
+stderr:     self.ids.writer.text += writer
+stderr: TypeError: can only concatenate str (not "int") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 61, in on_pre_enter
+stderr:     nickname.open()
+stderr:     ^^^^^^^^^^^^^
+stderr: AttributeError: 'NoneType' object has no attribute 'open'
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 63, in on_pre_enter
+stderr:     self.ids.welcome_message.text = 'Welcome, ' + nickname + '!'
+stderr:                                     ~~~~~~~~~~~~^~~~~~~~~~
+stderr: TypeError: can only concatenate str (not "NoneType") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 65, in on_pre_enter
+stderr:     self.updateposts()
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 103, in updateposts
+stderr:     self.ids.body.add_widget(PostUnit(id, writer, writedate, content))
+stderr:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 45, in __init__
+stderr:     self.ids.writedate.text += writedate
+stderr: TypeError: can only concatenate str (not "NoneType") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 65, in on_pre_enter
+stderr:     self.updateposts()
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 103, in updateposts
+stderr:     self.ids.body.add_widget(PostUnit(id, writer, writedate, content))
+stderr:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 45, in __init__
+stderr:     self.ids.writedate.text += writedate
+stderr: TypeError: can only concatenate str (not "NoneType") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 65, in on_pre_enter
+stderr:     self.updateposts()
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 103, in updateposts
+stderr:     self.ids.body.add_widget(PostUnit(id, writer, writedate, content))
+stderr:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 45, in __init__
+stderr:     self.ids.writedate.text += writedate
+stderr: TypeError: can only concatenate str (not "NoneType") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 65, in on_pre_enter
+stderr:     self.updateposts()
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 104, in updateposts
+stderr:     self.ids.body.add_widget(PostUnit(id, writer, writedate, content))
+stderr:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 45, in __init__
+stderr:     self.ids.writedate.text += writedate
+stderr: TypeError: can only concatenate str (not "NoneType") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 65, in on_pre_enter
+stderr:     self.updateposts()
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 103, in updateposts
+stderr:     self.ids.body.add_widget(PostUnit(id, writer, writedate, content))
+stderr:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 45, in __init__
+stderr:     self.ids.writedate.text += writedate
+stderr: TypeError: can only concatenate str (not "NoneType") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 24, in login
+stderr:     loginscreen.goto_post_screen()
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 108, in goto_post_screen
+stderr:     self.manager.current = "Post Screen"
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 65, in on_pre_enter
+stderr:     self.updateposts()
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 103, in updateposts
+stderr:     self.ids.body.add_widget(PostUnit(id, writer, writedate, content))
+stderr:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 45, in __init__
+stderr:     self.ids.writedate.text += writedate
+stderr: TypeError: can only concatenate str (not "NoneType") to str
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 20, in login
+stderr:     result = usersdbinterface.login(nickname, password)
+stderr:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\db_interface.py", line 69, in login
+stderr:     self._token = response.json().get('token')
+stderr:                   ^^^^^^^^^^^^^
+stderr: AttributeError: 'NoneType' object has no attribute 'json'
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\login_screen_GUI.kv", line 26, in <module>
+stderr:     on_release: root.login()
+stderr: ^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\login_screen.py", line 20, in login
+stderr:     result = usersdbinterface.login(nickname, password)
+stderr:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\db_interface.py", line 71, in login
+stderr:     self._token = response.get('token')
+stderr:                   ^^^^^^^^^^^^
+stderr: AttributeError: 'NoneType' object has no attribute 'get'
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Search log is : ['', '0']
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\post_screen_GUI.kv", line 5, in <module>
+stderr:     on_release: root.updateposts()
+stderr: ^^^^^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 52, in updateposts
+stderr:     postscreen.updateposts(self._id)
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 73, in updateposts
+stderr:     postsdbinterface.set_id_prefix(id_prefix)
+stderr:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr: AttributeError: 'PostsDBInterface' object has no attribute 'set_id_prefix'. Did you mean: 'get_id_prefix'?
+Base: Start application main loop
+Search log is : ['', '0']
+Base: Leaving application in progress...
+Base: Start application main loop
+Search log is : ['', '0']
+Search log is : ['', '0']
+Search log is : ['', '0', '0']
+Search log is : ['', '0']
+Search log is : ['', '0', '0/0']
+Base: Leaving application in progress...
+Base: Start application main loop
+Search log is : ['', '1']
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "kivy\properties.pyx", line 961, in kivy.properties.ObservableDict.__getattr__
+stderr: KeyError: 'nickname'
+stderr: 
+stderr: During handling of the above exception, another exception occurred:
+stderr: 
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\post_screen_GUI.kv", line 71, in <module>
+stderr:     on_release: root.goto_setting_screen()
+stderr: ^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 129, in goto_setting_screen
+stderr:     self.manager.current = 'Setting Screen'
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\setting_screen.py", line 35, in on_pre_enter
+stderr:     self.ids.nickname.text = usersdbinterface.get_nickname()
+stderr:     ^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 964, in kivy.properties.ObservableDict.__getattr__
+stderr: AttributeError: 'super' object has no attribute '__getattr__'. Did you mean: '__setattr__'?
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "D:\MyWork\NotTwitter_App\main.py", line 31, in <module>
+stderr:     NotTwitterApp().run()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+stderr:     self.idle()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+stderr:     self.dispatch_input()
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+stderr:     post_dispatch_input(*pop(0))
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+stderr:     wid.dispatch('on_touch_up', me)
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+stderr:     self.dispatch('on_release')
+stderr:   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+stderr:     exec(__kvlang__.co_value, idmap)
+stderr:   File "D:\MyWork\NotTwitter_App\GUIfiles\post_screen_GUI.kv", line 71, in <module>
+stderr:     on_release: root.goto_setting_screen()
+stderr: ^^^^^^^^^^^^^^
+stderr:   File "D:\MyWork\NotTwitter_App\post_screen.py", line 129, in goto_setting_screen
+stderr:     self.manager.current = 'Setting Screen'
+stderr:     ^^^^^^^^^^^^^^^^^^^^
+stderr:   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+stderr:   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+stderr:   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+stderr:   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+stderr:   File "kivy\_event.pyx", line 1213, in kivy._event.EventObservers._dispatch
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 1063, in on_current
+stderr:     self.transition.start(self)
+stderr:   File "C:\Users\lje64\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\screenmanager.py", line 377, in start
+stderr:     self.screen_in.dispatch('on_pre_enter')
+stderr:   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+stderr:   File "D:\MyWork\NotTwitter_App\setting_screen.py", line 36, in on_pre_enter
+stderr:     self.ids.usernum.text = usersdbinterface.get_header.get('usernum')
+stderr:                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stderr: AttributeError: 'function' object has no attribute 'get'
+Base: Start application main loop
+Search log is : ['', '1']
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
+Base: Start application main loop
+Search log is : ['', '0']
+Search log is : ['', '1']
+Base: Leaving application in progress...
+Base: Start application main loop
+Search log is : ['', '0']
+Search log is : ['', '1']
+Base: Leaving application in progress...
+Base: Start application main loop
+The user changed its nickname!
+The user changed its nickname!
+Base: Leaving application in progress...
+Base: Start application main loop
+Base: Leaving application in progress...
