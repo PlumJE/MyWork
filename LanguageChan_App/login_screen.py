@@ -5,7 +5,7 @@ from kivy.uix.popup import Popup
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.screenmanager import Screen
 
-from db_interface import usersdbinterface
+from db_interface import usersDBinterface
 from folder_paths import GUI_folder, graphics_folder
 
 
@@ -15,39 +15,43 @@ Builder.load_file(GUI_folder + '/login_screen_GUI.kv')
 class LoginWindow(GridLayout):
     # 입력한 문자열이 유효한지 확인한 후에 로그인을 시도한다
     def login(self, *args):
-        nickname = self.ids.nickname1.text
-        password = self.ids.password1.text
-        result = usersdbinterface.login(nickname, password)
+        nickname = self.ids.nickname.text
+        password = self.ids.password.text
+        result = usersDBinterface.login(nickname, password)
         if type(result) == Popup:
             result.open()
             return
         loginscreen.goto_post_screen()
     # 회원가입 창으로 변경한다
-    def showRegWin(self, *args):
-        loginscreen.showRegWin(*args)
+    def showSignupWin(self, *args):
+        loginscreen.showSignupWin(*args)
 loginwin = LoginWindow()
 
 # 회원가입 입력창 클래스
 class SignupWindow(GridLayout):
     # 입력한 문자열이 유효한지 확인한 후에 회원가입을 시도한다
     def signup(self, *args):
-        if self.isInvalidStr() or self.isInvalidMailaddr() or self.isDifferentPassword(): # 위에는 회원가입 탈락 사유들
+        nickname = self.ids.nickname.text
+        mailaddr = self.ids.mailaddr.text
+        password = self.ids.password.text
+        if self.isInvalidStr(nickname):
             return
-        result = usersdbinterface.signup()
+        if self.isInvalidStr(mailaddr) or self.isInvalidMailaddr(mailaddr):
+            return
+        if self.isInvalidStr(password) or self.isDifferentPassword(password):
+            return
+        result = usersDBinterface.signup(nickname, mailaddr, password)
         if type(result) == Popup:
             result.open()
     # 로그인 창으로 변경한다
     def showLoginWin(self, *args):
         loginscreen.showLoginWin(*args)
     # 입력한 문자열이 유효한지 확인한다
-    def isInvalidStr(self):
-        nickname = self.ids.nickname2.text
-        mailaddr = self.ids.mailaddr.text
-        password = self.ids.password2.text
-        if nickname.strip() == '' or mailaddr.strip() == '' or password.strip() == '':
+    def isInvalidStr(self, string):
+        if string.strip() in ['']:
             Popup(
-                title='Registration failed', 
-                content=Label('Please input valid letter'),
+                title='Signup failed', 
+                content=Label(text='Please input valid letter'),
                 size_hint=(1, 0.2),
                 auto_dismiss=True
             ).open()
@@ -55,11 +59,11 @@ class SignupWindow(GridLayout):
         else:
             return False
     # 입력한 메일주소가 유효한 형식인지 확인한다
-    def isInvalidMailaddr(self):
-        if not compile('[0-9A-Za-z]+@[0-9A-Za-z]+.[A-Za-z]+').match(self.ids.mailaddr.text):
+    def isInvalidMailaddr(self, mailaddr):
+        if not compile('[0-9A-Za-z]+@[0-9A-Za-z]+.[A-Za-z]+').match(mailaddr):
             Popup(
-                title='Registration failed', 
-                content=Label('Please input valid format mail address'),
+                title='Signup failed', 
+                content=Label(text='Please input valid format mail address'),
                 size_hint=(1, 0.2),
                 auto_dismiss=True
             ).open()
@@ -67,11 +71,11 @@ class SignupWindow(GridLayout):
         else:
             return False
     # 패스워드를 2번 입력할때 실수로 서로 똑같이 입력했는지 확인한다
-    def isDifferentPassword(self):
-        if self.ids.password2.text != self.ids.pswdagain.text:
+    def isDifferentPassword(self, password):
+        if password != self.ids.pwagain.text:
             Popup(
-                title='Registration failed', 
-                content=Label('Please input same password twice'),
+                title='Signup failed', 
+                content=Label(text='Please input same password twice'),
                 size_hint=(1, 0.2),
                 auto_dismiss=True
             ).open()

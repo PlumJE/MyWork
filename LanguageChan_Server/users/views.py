@@ -42,6 +42,8 @@ class Loginout(APIView):
     def delete(self, request):
         try:
             user = request.user
+            if user.is_anonymous:
+                raise AuthenticationFailed('Authentication credentials were not provided.')
 
             logout(request)
 
@@ -50,6 +52,11 @@ class Loginout(APIView):
             return Response(
                 {'message': 'Logout successful'}, 
                 status=status.HTTP_200_OK
+            )
+        except AuthenticationFailed as e:
+            return Response(
+                {'error': str(e)}, 
+                status=status.HTTP_401_UNAUTHORIZED
             )
         except Exception as e:
             return Response(
@@ -68,7 +75,7 @@ class Signupdown(APIView):
             User.objects.create_user(username=username, email=email, password=password)
 
             return Response(
-                {'message': 'Registration successful'}, 
+                {'message': 'Signup successful'}, 
                 status=status.HTTP_201_CREATED
             )
         except IntegrityError as e:
@@ -90,7 +97,7 @@ class Signupdown(APIView):
             user.delete()
 
             return Response(
-                {'message': 'User deletion successful'}, 
+                {'message': 'Signdown successful'}, 
                 status=status.HTTP_200_OK
             )
         except AuthenticationFailed as e:

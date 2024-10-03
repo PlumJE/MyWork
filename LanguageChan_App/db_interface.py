@@ -3,6 +3,8 @@ from kivy.uix.label import Label
 from requests.exceptions import RequestException
 import requests
 
+from debug import logger
+
 
 # 응답 코드를 저장한 예외 클래스
 class ResponseException(RequestException):
@@ -42,7 +44,7 @@ class DBInterface:
 class UsersDBInterface(DBInterface):
     def __init__(self):
         super(UsersDBInterface, self).__init__()
-        self.url += 'users/'
+        self._url += 'users/'
         self.token = 'nothing'
         self.usernum = 0
     def login(self, nickname, password):
@@ -70,7 +72,7 @@ class UsersDBInterface(DBInterface):
 
         self.token = ''
         self.usernum = 0
-    def register(self, nickname, mailaddr, password):
+    def signup(self, nickname, mailaddr, password):
         url = self.url + 'signupdown/'
         data = {
             'nickname': nickname, 
@@ -81,7 +83,7 @@ class UsersDBInterface(DBInterface):
         result = self._post(url, data=data)
         if type(result) == ResponseException:
             raise result
-    def unregister(self):
+    def signdown(self):
         url = self.url + 'signupdown/'
         headers = {
             'Authorization': 'Token ' + self.token
@@ -105,7 +107,7 @@ class UsersDBInterface(DBInterface):
         if type(result) == ResponseException:
             raise result
         
-        log.ger.info('Charanums are ' + str(result.get('charanums')))
+        logger.info('Charanums are ' + str(result.get('charanums')))
         
         return result.get('charanums')
     def post_chara(self, charanum):
@@ -227,7 +229,7 @@ usersDBinterface = UsersDBInterface()
 class EntitiesDBInterface(DBInterface):
     def __init__(self):
         super(EntitiesDBInterface, self).__init__()
-        self.url += 'lessons/'
+        self._url += 'lessons/'
     def get_fullimg(self, charanum):
         return 'english_chan.jpg'
 entitiesDBinterface = EntitiesDBInterface()
@@ -235,7 +237,7 @@ entitiesDBinterface = EntitiesDBInterface()
 class LessonsDBInterface(DBInterface):
     def __init__(self):
         super(LessonsDBInterface, self).__init__()
-        self.url += 'lessons/'
+        self._url += 'lessons/'
     def get_lessonmap_nums(self):
         url = self.url + 'lessonmaps/'
 

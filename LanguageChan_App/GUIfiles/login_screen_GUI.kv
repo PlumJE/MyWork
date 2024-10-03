@@ -33,16 +33,16 @@
         text: "Login"
         on_release: root.login()
     Button:
-        id: regbutton
-        text: "Register"
-        on_release: root.showRegwin()
+        id: signupbutton
+        text: "Signup"
+        on_release: root.showSignupwin()
 
-<RegWin>
+<SignupWin>
     cols: 2
     size_hint: 1, 0.4
     pos_hint: {"top":0.5}
     Label:
-        text: "Make nickname:"
+        text: "Input your nickname :"
         width: 100
         color: "black"
         canvas.before:
@@ -54,7 +54,7 @@
     TextInput:
         id: nickname
     Label:
-        text: "Input mail address:"
+        text: "Input mail address :"
         width: 100
         color: "black"
         canvas.before:
@@ -66,7 +66,7 @@
     TextInput:
         id: mailaddr
     Label:
-        text: "Set password:"
+        text: "Input your password :"
         width: 100
         color: "black"
         canvas.before:
@@ -78,7 +78,7 @@
     TextInput:
         id: password
     Label:
-        text: "Password again?"
+        text: "Input password again :"
         width: 100
         color: "black"
         canvas.before:
@@ -94,9 +94,9 @@
         text: "Exit"
         on_release: root.showLoginWin()
     Button:
-        id: regbutton
-        text: "Register me!"
-        on_release: root.register()
+        id: signupbutton
+        text: "Signup!"
+        on_release: root.signup()
 
 <LoginScreen>
     name: "Login Screen"
