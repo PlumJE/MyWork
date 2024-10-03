@@ -1,109 +1,90 @@
-#:import bg_folder folder_paths.bg_folder
-
-<LoginWin>
+<LoginWindow>
+    id: loginWin
     cols: 2
     size_hint: 1, 0.2
-    pos_hint: {"top":0.5}
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 0.75
+        Rectangle:
+            pos: self.pos
+            size: self.size
     Label:
-        text: "Nickname:"
+        text: "Nickname :"
         width: 100
         color: "black"
-        canvas.before:
-            Color:
-                rgba: 1, 1, 1, 0.5
-            Rectangle:
-                size: self.size
-                pos: self.pos
     TextInput:
         id: nickname
     Label:
-        text: "Password:"
+        text: "Password :"
         width: 100
         color: "black"
-        canvas.before:
-            Color:
-                rgba: 1, 1, 1, 0.5
-            Rectangle:
-                size: self.size
-                pos: self.pos
     TextInput:
         id: password
     Button:
-        id: loginbutton
+        id: loginbtn
         text: "Login"
         on_release: root.login()
     Button:
-        id: signupbutton
         text: "Signup"
-        on_release: root.showSignupwin()
+        on_release: root.showSignupWin()
 
-<SignupWin>
+<SignupWindow>
+    id: SignupWin
     cols: 2
-    size_hint: 1, 0.4
-    pos_hint: {"top":0.5}
+    size_hint: 1, 0.3
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 0.75
+        Rectangle:
+            pos: self.pos
+            size: self.size
     Label:
-        text: "Input your nickname :"
+        text: "Input nickname:"
         width: 100
         color: "black"
-        canvas.before:
-            Color:
-                rgba: 1, 1, 1, 0.5
-            Rectangle:
-                size: self.size
-                pos: self.pos
     TextInput:
         id: nickname
     Label:
-        text: "Input mail address :"
+        text: "Input mail address:"
         width: 100
         color: "black"
-        canvas.before:
-            Color:
-                rgba: 1, 1, 1, 0.5
-            Rectangle:
-                size: self.size
-                pos: self.pos
     TextInput:
         id: mailaddr
     Label:
-        text: "Input your password :"
+        text: "Input password:"
         width: 100
         color: "black"
-        canvas.before:
-            Color:
-                rgba: 1, 1, 1, 0.5
-            Rectangle:
-                size: self.size
-                pos: self.pos
     TextInput:
         id: password
     Label:
-        text: "Input password again :"
+        text: "Input password again:"
         width: 100
         color: "black"
-        canvas.before:
-            Color:
-                rgba: 1, 1, 1, 0.5
-            Rectangle:
-                size: self.size
-                pos: self.pos
     TextInput:
-        id: pwagain
+        id: pswdagain
     Button:
-        id: exitButton
-        text: "Exit"
+        text: "To login window"
         on_release: root.showLoginWin()
     Button:
-        id: signupbutton
-        text: "Signup!"
+        text: "Signup"
         on_release: root.signup()
 
 <LoginScreen>
-    name: "Login Screen"
-    Button:
-        id: titlebutton
-        pos_hint: {"anchor_x":"center", "anchor_y":"center"}
-        size_hint: 1, 1
-        background_normal: bg_folder + "title_image.jpg"
-        background_down: bg_folder + "title_image.jpg"
-        on_press: root.showLoginWin()
+    Image:
+        id: loginbg
+        fit_mode: "fill"
+        source: root._bg_path
+        on_touch_up: root.showLoginWin()
+    # Current Version Label!!
+    AnchorLayout:
+        anchor_x: 'right'
+        anchor_y: 'bottom'
+        Label:
+            size: 100, 30
+            size_hint: None, None
+            text: 'ver 0.0'
+            color: 'black'
+    AnchorLayout:
+        id: loginlayout
+        anchor_x: 'center'
+        anchor_y: 'center'

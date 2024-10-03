@@ -43,6 +43,12 @@ class SignupWindow(GridLayout):
         result = usersdbinterface.signup(nickname, mailaddr, password)
         if type(result) == Popup:
             result.open()
+        Popup(
+            title='Signup has succeeded!!',
+            content=Label(text='Now ye are our member! :)'),
+            size_hint=(1, 0.2),
+            auto_dismiss=True
+        ).open()
     # 로그인 창으로 변경한다
     def showLoginWin(self, *args):
         loginscreen.showLoginWin(*args)
@@ -89,7 +95,7 @@ class LoginScreen(Screen):
     # state가 0이면 아무런 창도 없고, 1이면 로그인 창만, 2이면 회원가입 창만 있는 상태
     state = 0
     bg_path = graphics_folder + '/login_background.jpg'
-    # 로그인 창을 연다
+    # 로그인 창을 열기만 한다
     def openLoginWin(self, *args):
         if self.state == 0:
             self.showLoginWin(args)

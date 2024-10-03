@@ -8,10 +8,11 @@ from kivy.uix.boxlayout import BoxLayout
 from folder_paths import GUI_folder, bg_folder, charas_folder
 from db_interface import usersDBinterface, entitiesDBinterface, lessonsDBinterface
 
-Builder.load_file(GUI_folder + 'game_screen_GUI.kv')
+Builder.load_file(GUI_folder + '/game_screen_GUI.kv')
 
 # 메인 화면
 class MainScreen(Screen):
+    _bg_path = bg_folder + '/main_background.jpg'
     def show_random_chara(self):
         charanums = usersDBinterface.get_chara_nums()
         if charanums == []:
@@ -45,11 +46,12 @@ lessonmapscreen = LessonMapScreen()
 
 # 캐릭터 육성 화면
 class CharacterScreen(Screen):
-    pass
+    _bg_path = "/character_background.jpg"
 characterscreen = CharacterScreen()
 
 # 뽑기 화면
 class GachaScreen(Screen):
+    _bg_path = "/gacha_background.jpg"
     def gacha(self):
         try:
             jewel = gamescreen.load_jewel()
@@ -78,6 +80,7 @@ gachascreen = GachaScreen()
 
 # 나머지 모음 화면
 class OthersScreen(Screen):
+    _bg_path = "/gacha_background.jpg"
     def on_pre_enter(self, *args):
         self.ids.useridlbl.text = str()
     def logout(self):

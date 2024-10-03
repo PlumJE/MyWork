@@ -33,5 +33,4 @@ if __name__ == "__main__":
     try:
         languagechanapp.run()
     except Exception as e:
-        logger.critical(str(e))
-    logger.info('\n\n')
+        logger.critical('Leathal error has occured! ' + str(e))

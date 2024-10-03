@@ -4,7 +4,7 @@
     name: "Main Screen"
     Image:
         id: bg
-        source: bg_folder + "main_background.jpg"
+        source: root._bg_path
         pos_hint: {"anchor_x":"center", "anchor_y":"center"}
         size_hint: 1, 1
         allow_strech: True
@@ -39,7 +39,7 @@
     name: "Character Screen"
     Image:
         id: bg
-        source: bg_folder + "character_background.jpg"
+        source: root._bg_path
         pos_hint: {"anchor_x":"center", "anchor_y":"center"}
         size_hint: 1, 1
         allow_strech: True
@@ -49,7 +49,7 @@
     name: "Gacha Screen"
     Image:
         id: bg
-        source: bg_folder + "gacha_background.jpg"
+        source: root._bg_path
         pos_hint: {"anchor_x":"center", "anchor_y":"center"}
         size_hint: 1, 1
         allow_strech: True
@@ -64,7 +64,7 @@
     name: "Others Screen"
     Image:
         id: bg
-        source: bg_folder + "gacha_background.jpg"
+        source: root._bg_path
         allow_strech: True
         keep_ratio: False
     GridLayout:

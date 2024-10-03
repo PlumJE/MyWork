@@ -48,7 +48,7 @@ class UsersDBInterface(DBInterface):
         self.token = 'nothing'
         self.usernum = 0
     def login(self, nickname, password):
-        url = self.url + 'loginout/'
+        url = self._url + 'loginout/'
         data = {
             'nickname': nickname, 
             'password': password
@@ -61,7 +61,7 @@ class UsersDBInterface(DBInterface):
         self.token = result.get('token')
         self.usernum = result.get('usernum') 
     def logout(self):
-        url = self.url + 'loginout/'
+        url = self._url + 'loginout/'
         headers = {
             'Autorization': 'Token ' + self.token
         }
@@ -73,7 +73,7 @@ class UsersDBInterface(DBInterface):
         self.token = ''
         self.usernum = 0
     def signup(self, nickname, mailaddr, password):
-        url = self.url + 'signupdown/'
+        url = self._url + 'signupdown/'
         data = {
             'nickname': nickname, 
             'mailaddr': mailaddr, 
@@ -84,7 +84,7 @@ class UsersDBInterface(DBInterface):
         if type(result) == ResponseException:
             raise result
     def signdown(self):
-        url = self.url + 'signupdown/'
+        url = self._url + 'signupdown/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -94,8 +94,8 @@ class UsersDBInterface(DBInterface):
             raise result
         
         self.logout()
-    def get_chara_nums(self):
-        url = self.url + 'charas/'
+    def get_charalist(self):
+        url = self._url + 'charalist/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -111,7 +111,7 @@ class UsersDBInterface(DBInterface):
         
         return result.get('charanums')
     def post_chara(self, charanum):
-        url = self.url + 'chara/'
+        url = self._url + 'chara/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -123,8 +123,8 @@ class UsersDBInterface(DBInterface):
         result = self._post(url, headers=headers, data=data)
         if type(result) == ResponseException:
             raise result
-    def get_chara_info(self, charanum):
-        url = self.url + 'chara/'
+    def get_chara(self, charanum):
+        url = self._url + 'chara/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -138,12 +138,12 @@ class UsersDBInterface(DBInterface):
             raise result
         
         return result
-    def put_chara_lvl(self, charanum):
+    def put_chara(self, charanum):
         lvl = self.get_charainfo(self.usernum, charanum).get('lvl') + 1
         atk = lvl * 10
         dps = lvl * 10
 
-        url = self.url + 'chara/'
+        url = self._url + 'chara/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -159,7 +159,7 @@ class UsersDBInterface(DBInterface):
         if type(result) == ResponseException:
             raise result
     def post_item(self):
-        url = self.url + 'item/'
+        url = self._url + 'item/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -171,7 +171,7 @@ class UsersDBInterface(DBInterface):
         if type(result) == ResponseException:
             raise result
     def get_money(self):
-        url = self.url + 'item/'
+        url = self._url + 'item/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -185,7 +185,7 @@ class UsersDBInterface(DBInterface):
         
         return result.get('money')
     def get_jewel(self):
-        url = self.url + 'item/'
+        url = self._url + 'item/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -199,7 +199,7 @@ class UsersDBInterface(DBInterface):
         
         return result.get('jewel')
     def put_money(self, money):
-        url = self.url + 'item/'
+        url = self._url + 'item/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -212,7 +212,7 @@ class UsersDBInterface(DBInterface):
         if type(result) == ResponseException:
             raise result
     def put_jewel(self, jewel):
-        url = self.url + 'item/'
+        url = self._url + 'item/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
@@ -239,7 +239,7 @@ class LessonsDBInterface(DBInterface):
         super(LessonsDBInterface, self).__init__()
         self._url += 'lessons/'
     def get_lessonmap_nums(self):
-        url = self.url + 'lessonmaps/'
+        url = self._url + 'lessonmaps/'
 
         result = self._get(url)
         if type(result) == Exception:
@@ -247,7 +247,7 @@ class LessonsDBInterface(DBInterface):
         
         return result.get('lessonmapnum')
     def get_lessonmap_info(self, lessonmapnum):
-        url = self.url + 'lessonmap/'
+        url = self._url + 'lessonmap/'
         data = {
             'lessonmapnum': lessonmapnum
         }

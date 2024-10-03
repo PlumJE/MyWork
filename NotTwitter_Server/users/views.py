@@ -1,98 +1,151 @@
-from django.db import IntegrityError
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from rest_framework import status, permissions
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.exceptions import *
 from rest_framework.authtoken.models import Token
+
 
 class Loginout(APIView):
     def post(self, request):
-        username = request.data.get('nickname')
-        password = request.data.get('password')
+        try:
+            username = request.data.get('nickname')
+            password = request.data.get('password')
 
-        user = authenticate(request, username=username, password=password)
-        if not user:
+            user = authenticate(request, username=username, password=password)
+            if not user:
+                raise AuthenticationFailed('Nickname or password is incorrect.')
+
+            login(request, user)
+            token, created = Token.objects.get_or_create(user=user)
+
             return Response(
-                {'error': 'Invalid username or password.'},
-                status=status.HTTP_401_UNAUTHORIZED
+                {
+                    'token': token.key, 
+                    'usernum': user.id, 
+                    'created': created
+                },
+                status=status.HTTP_201_CREATED
             )
-
-        login(request, user)
-        token, created = Token.objects.get_or_create(user=user)
-
-        return Response(
-            {'token': token.key, 'usernum': user.id, 'created': created},
-            status=status.HTTP_201_CREATED
-        )
+        except Exception as e:
+            if isinstance(e, APIException):
+                status_code=e.status_code
+            else:
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def delete(self, request):
-        user = request.user
-        if user.is_anonymous:
+        try:
+            user = request.user
+            if user.is_anonymous:
+                raise NotAuthenticated('Authentication credentials were not provided.')
+
+            Token.objects.filter(user=user).delete()
+            logout(request)
+
             return Response(
-                {'error': 'Authentication credentials were not provided.'},
-                status=status.HTTP_401_UNAUTHORIZED
+                {'message': 'Logout successful'}, 
+                status=status.HTTP_200_OK
             )
-
-        Token.objects.filter(user=user).delete()
-        logout(request)
-
-        return Response(
-            {'message': 'Logout successful'}, 
-            status=status.HTTP_200_OK
-        )
+        except Exception as e:
+            if isinstance(e, APIException):
+                status_code=e.status_code
+            else:
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
 
 
 class Signupdown(APIView):
     def post(self, request):
-        username = request.data.get('nickname')
-        email = request.data.get('mailaddr')
-        password = request.data.get('password')
         try:
+            username = request.data.get('nickname')
+            email = request.data.get('mailaddr')
+            password = request.data.get('password')
+
             User.objects.create_user(username=username, email=email, password=password)
+
             return Response(
                 {'message': 'Signup successful'}, 
                 status=status.HTTP_201_CREATED
             )
-        except IntegrityError:
+        except Exception as e:
+            if isinstance(e, APIException):
+                status_code=e.status_code
+            else:
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
             return Response(
-                {'error': 'Username or email already exists.'}, 
-                status=status.HTTP_400_BAD_REQUEST
+                {'error': str(e)},
+                status=status_code
             )
     def delete(self, request):
-        user = request.user
-        if user.is_anonymous:
+        try:
+            user = request.user
+            if user.is_anonymous:
+                raise NotAuthenticated('Authentication credentials were not provided.')
+
+            user.delete()
             return Response(
-                {'error': 'Authentication credentials were not provided.'},
-                status=status.HTTP_401_UNAUTHORIZED
+                {'message': 'Signdown successful'}, 
+                status=status.HTTP_200_OK
             )
-        user.delete()
-        return Response(
-            {'message': 'Signdown successful'}, 
-            status=status.HTTP_200_OK
-        )
+        except Exception as e:
+            if isinstance(e, APIException):
+                status_code=e.status_code
+            else:
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
 
 
 class NicknameView(APIView):
     permission_classes = [permissions.IsAuthenticated]
     def get(self, request):
-        return Response(
-            {'nickname': request.user.username},
-            status=status.HTTP_200_OK
-        )
-    def put(self, request):
-        user = request.user
-        new_nickname = request.data.get('nickname')
-
-        if not new_nickname:
+        try:
             return Response(
-                {'error': 'New nickname is required.'},
-                status=status.HTTP_400_BAD_REQUEST
+                {'nickname': request.user.username},
+                status=status.HTTP_200_OK
             )
+        except Exception as e:
+            if isinstance(e, APIException):
+                status_code=e.status_code
+            else:
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
+    def put(self, request):
+        try:
+            user = request.user
+            new_nickname = request.data.get('nickname')
 
-        user.username = new_nickname
-        user.save()
+            if not new_nickname:
+                raise ValidationError('Nickname is required.')
 
-        return Response(
-            {'message': 'Nickname updated successfully.'},
-            status=status.HTTP_200_OK
-        )
+            if User.objects.filter(username=new_nickname).exists():
+                raise ValidationError('Nickname already exists.')
+
+            user.username = new_nickname
+            user.save()
+
+            return Response(
+                {'message': 'Nickname updated successfully.'},
+                status=status.HTTP_200_OK
+            )
+        except Exception as e:
+            if isinstance(e, APIException):
+                status_code=e.status_code
+            else:
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )

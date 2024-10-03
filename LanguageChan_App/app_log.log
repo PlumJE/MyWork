@@ -1,4 +1,4 @@
-'super' object has no attribute '__getattr__'
-
-
-
+Leathal error has occured! 'super' object has no attribute '__getattr__'
+Leathal error has occured! 'UsersDBInterface' object has no attribute 'url'
+Leathal error has occured! 'UsersDBInterface' object has no attribute 'url'
+Leathal error has occured! 401 : Invalid username or password.

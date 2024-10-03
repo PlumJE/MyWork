@@ -6,7 +6,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.screenmanager import Screen
 
 from db_interface import usersDBinterface
-from folder_paths import GUI_folder, graphics_folder
+from folder_paths import GUI_folder, bg_folder
 
 
 Builder.load_file(GUI_folder + '/login_screen_GUI.kv')
@@ -87,27 +87,25 @@ signupwin = SignupWindow()
 # 로그인 스크린 클래스
 class LoginScreen(Screen):
     # state가 0이면 아무런 창도 없고, 1이면 로그인 창만, 2이면 회원가입 창만 있는 상태
-    state = 0
-    bg_path = graphics_folder + '/login_background.jpg'
-    # 로그인 창을 연다
-    def openLoginWin(self, *args):
-        if self.state == 0:
-            self.showLoginWin(args)
+    _state = 0
+    _bg_path = bg_folder + '/title_image.jpg'
     # 로그인 창을 열고, 회원가입 창을 닫는다
     def showLoginWin(self, *args):
-        if self.state != 1:
+        print('the state is', self._state)
+        if self._state != 1:
             self.ids.loginlayout.add_widget(loginwin)
-        if self.state == 2:
+        if self._state == 2:
             self.ids.loginlayout.remove_widget(signupwin)
-        self.state = 1
+        self._state = 1
     # 회원가입 창을 열고, 로그인 창을 닫는다
     def showSignupWin(self, *args):
-        if self.state != 2:
+        if self._state != 2:
             self.ids.loginlayout.add_widget(signupwin)
-        if self.state == 1:
+        if self._state == 1:
             self.ids.loginlayout.remove_widget(loginwin)
-        self.state = 2
+        self._state = 2
     # 게시글 스크린으로 들어간다
     def goto_post_screen(self):
+        print('goto_post_screen !!!!')
         self.manager.current = "Post Screen"
 loginscreen = LoginScreen(name="Login Screen")

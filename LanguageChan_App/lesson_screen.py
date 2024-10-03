@@ -11,7 +11,7 @@ from kivy.uix.image import Image
 
 from folder_paths import GUI_folder
 
-Builder.load_file(GUI_folder + 'lesson_screen_GUI.kv')
+Builder.load_file(GUI_folder + '/lesson_screen_GUI.kv')
 
 class LessonScreen(Screen):
     def __init__(self, **kwargs):
