@@ -46,12 +46,12 @@ lessonmapscreen = LessonMapScreen()
 
 # 캐릭터 육성 화면
 class CharacterScreen(Screen):
-    _bg_path = "/character_background.jpg"
+    _bg_path = bg_folder + "/character_background.jpg"
 characterscreen = CharacterScreen()
 
 # 뽑기 화면
 class GachaScreen(Screen):
-    _bg_path = "/gacha_background.jpg"
+    _bg_path = bg_folder + "/gacha_background.jpg"
     def gacha(self):
         try:
             jewel = gamescreen.load_jewel()
@@ -80,7 +80,7 @@ gachascreen = GachaScreen()
 
 # 나머지 모음 화면
 class OthersScreen(Screen):
-    _bg_path = "/gacha_background.jpg"
+    _bg_path = bg_folder + "/gacha_background.jpg"
     def on_pre_enter(self, *args):
         self.ids.useridlbl.text = str()
     def logout(self):

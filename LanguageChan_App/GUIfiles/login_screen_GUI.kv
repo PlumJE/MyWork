@@ -25,7 +25,7 @@
         text: "Login"
         on_release: root.login()
     Button:
-        text: "Signup"
+        text: "To signup"
         on_release: root.showSignupWin()
 
 <SignupWindow>
@@ -63,7 +63,7 @@
     TextInput:
         id: pswdagain
     Button:
-        text: "To login window"
+        text: "To login"
         on_release: root.showLoginWin()
     Button:
         text: "Signup"
@@ -74,7 +74,7 @@
         id: loginbg
         fit_mode: "fill"
         source: root._bg_path
-        on_touch_up: root.showLoginWin()
+        on_touch_up: root.openLoginWin()
     # Current Version Label!!
     AnchorLayout:
         anchor_x: 'right'

@@ -1,4 +1,3 @@
-from django.db import IntegrityError
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from rest_framework import status, permissions
@@ -31,33 +30,36 @@ class Loginout(APIView):
                 status=status.HTTP_200_OK
             )
         except Exception as e:
-            match type(e):
-                case AuthenticationFailed, NotAuthenticated:
-                    status_code = status.HTTP_401_UNAUTHORIZED
-                case PermissionDenied:
-                    status_code = status.HTTP_403_FORBIDDEN
-                case Http404:
-                    status_code = status.HTTP_404_NOT_FOUND
-                case _:
-                    status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
             return Response(
-                {'error': str(e)}, 
+                {'error': str(e)},
                 status=status_code
             )
-
     def delete(self, request):
         try:
             user = request.user
             if user.is_anonymous:
                 raise AuthenticationFailed('Authentication credentials were not provided.')
 
-            logout(request)
             Token.objects.filter(user=user).delete()
-            return Response({'message': 'Logout successful'}, status=status.HTTP_200_OK)
-        except AuthenticationFailed as e:
-            return Response({'error': str(e)}, status=status.HTTP_401_UNAUTHORIZED)
+            logout(request)
+            
+            return Response(
+                {'message': 'Logout successful'}, 
+                status=status.HTTP_200_OK
+            )
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
 
 class Signupdown(APIView):
     def post(self, request):
@@ -67,11 +69,20 @@ class Signupdown(APIView):
             password = request.data.get('password')
 
             User.objects.create_user(username=username, email=email, password=password)
-            return Response({'message': 'Signup successful'}, status=status.HTTP_201_CREATED)
-        except IntegrityError:
-            return Response({'error': 'Username or email already exists.'}, status=status.HTTP_400_BAD_REQUEST)
+
+            return Response(
+                {'message': 'Signup successful'}, 
+                status=status.HTTP_201_CREATED
+            )
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def delete(self, request):
         try:
             user = request.user
@@ -79,46 +90,102 @@ class Signupdown(APIView):
                 raise AuthenticationFailed('Authentication credentials were not provided.')
 
             user.delete()
-            return Response({'message': 'Account deleted successfully'}, status=status.HTTP_200_OK)
-        except AuthenticationFailed as e:
-            return Response({'error': str(e)}, status=status.HTTP_401_UNAUTHORIZED)
+
+            return Response(
+                {'message': 'Account deleted successfully'}, 
+                status=status.HTTP_200_OK
+            )
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
 
 class UsersCharasView(APIView):
     permission_classes = [permissions.IsAuthenticated]
     def get(self, request):
         try:
-            usernum = request.data.get('usernum')
-            charas = UsersChara.objects.filter(usernum=usernum).values_list('charanum', flat=True)
-            return Response({'charanums': list(charas)}, status=status.HTTP_200_OK)
-        except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            user = request.user
+            if user.is_anonymous:
+                raise AuthenticationFailed('Authentication credentials were not provided.')
+            
+            usernum = user.id
+            charas = UsersChara.objects.filter(usernum=usernum)
+            charalist = [chara.charanum for chara in charas]
 
+            return Response(
+                {'charalist': charalist},
+                status=status.HTTP_200_OK
+            )
+        except Exception as e:
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
 
 class UsersCharaView(APIView):
     permission_classes = [permissions.IsAuthenticated]
     def post(self, request):
         try:
-            usernum = request.data.get('usernum')
+            user = request.user
+            if user.is_anonymous:
+                raise AuthenticationFailed('Authentication credentials were not provided.')
+            
+            usernum = user.id
             charanum = request.data.get('charanum')
             UsersChara.objects.create(usernum=usernum, charanum=charanum, lvl=1)
-            return Response({'message': 'UsersChara created successfully'}, status=status.HTTP_201_CREATED)
+
+            return Response(
+                {'message': 'UsersChara created successfully'}, 
+                status=status.HTTP_201_CREATED
+            )
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def get(self, request):
         try:
-            usernum = request.data.get('usernum')
+            user = request.user
+            if user.is_anonymous:
+                raise AuthenticationFailed('Authentication credentials were not provided.')
+            
+            usernum = user.id
             charanum = request.data.get('charanum')
             chara = UsersChara.objects.get(usernum=usernum, charanum=charanum)
-            return Response({'lvl': chara.lvl}, status=status.HTTP_200_OK)
-        except UsersChara.DoesNotExist:
-            return Response({'error': 'Chara not found'}, status=status.HTTP_404_NOT_FOUND)
+
+            return Response(
+                {'lvl': chara.lvl}, 
+                status=status.HTTP_200_OK
+            )
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def put(self, request):
         try:
-            usernum = request.data.get('usernum')
+            user = request.user
+            if user.is_anonymous:
+                raise AuthenticationFailed('Authentication credentials were not provided.')
+            
+            usernum = user.id
             charanum = request.data.get('charanum')
             lvl = request.data.get('lvl')
 
@@ -127,7 +194,14 @@ class UsersCharaView(APIView):
             chara.save()
             return Response({'message': 'UsersChara updated successfully'}, status=status.HTTP_200_OK)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
 
 class UsersFriendsView(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -138,17 +212,29 @@ class UsersFriendsView(APIView):
             UsersFriends.objects.create(usernum=usernum, friendnum=friendnum)
             return Response({'message': 'UsersFriends created successfully'}, status=status.HTTP_201_CREATED)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def delete(self, request):
         try:
             usernum = request.data.get('usernum')
             friendnum = request.data.get('friendnum')
             UsersFriends.objects.get(usernum=usernum, friendnum=friendnum).delete()
             return Response({'message': 'UsersFriends deleted successfully'}, status=status.HTTP_200_OK)
-        except UsersFriends.DoesNotExist:
-            return Response({'error': 'Friendship not found'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
 
 class UsersItemView(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -162,16 +248,28 @@ class UsersItemView(APIView):
                 return Response({'message': 'UsersItem created successfully'}, status=status.HTTP_201_CREATED)
             return Response({'message': 'UsersItem already exists'}, status=status.HTTP_200_OK)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def get(self, request):
         try:
             usernum = request.data.get('usernum')
             item = UsersItem.objects.get(usernum=usernum)
             return Response({'money': item.money, 'jewel': item.jewel}, status=status.HTTP_200_OK)
-        except UsersItem.DoesNotExist:
-            return Response({'error': 'Item not found'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def put(self, request):
         try:
             usernum = request.data.get('usernum')
@@ -184,8 +282,14 @@ class UsersItemView(APIView):
             item.save()
             return Response({'message': 'UsersItem updated successfully'}, status=status.HTTP_200_OK)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
 
 class UsersProgressView(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -196,17 +300,29 @@ class UsersProgressView(APIView):
             UsersProgress.objects.create(usernum=usernum, lessonmapnum=lessonmapnum, progress=1)
             return Response({'message': 'UsersProgress created successfully'}, status=status.HTTP_201_CREATED)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def get(self, request):
         try:
             usernum = request.data.get('usernum')
             lessonmapnum = request.data.get('lessonmapnum')
             progress = UsersProgress.objects.get(usernum=usernum, lessonmapnum=lessonmapnum).progress
             return Response({'progress': progress}, status=status.HTTP_200_OK)
-        except UsersProgress.DoesNotExist:
-            return Response({'error': 'Progress not found'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )
     def put(self, request):
         try:
             usernum = request.data.get('usernum')
@@ -218,4 +334,11 @@ class UsersProgressView(APIView):
             progress_record.save()
             return Response({'message': 'UsersProgress updated successfully'}, status=status.HTTP_200_OK)
         except Exception as e:
-            return Response({'error': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            if isinstance(e, APIException):
+                status_code = e.status_code
+            else:
+                status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
+            return Response(
+                {'error': str(e)},
+                status=status_code
+            )

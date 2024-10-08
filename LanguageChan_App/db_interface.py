@@ -29,8 +29,10 @@ class DBInterface:
                 case _:
                     raise ResponseException(response.status_code, response.json().get('error'))
         except ResponseException as e:
+            logger.error(str(e))
             return e
         except Exception as e:
+            logger.error(str(e))
             return ResponseException(499, 'Internal client error')
     def _post(self, url, headers={}, data={}):
         return self.__execute(requests.post, url, headers, data)
@@ -47,6 +49,7 @@ class UsersDBInterface(DBInterface):
         self._url += 'users/'
         self.token = 'nothing'
         self.usernum = 0
+    # 성공시 None, 실패시 Popup을 리턴
     def login(self, nickname, password):
         url = self._url + 'loginout/'
         data = {
@@ -54,24 +57,36 @@ class UsersDBInterface(DBInterface):
             'password': password
         }
 
-        result = self._post(url, data=data)
-        if type(result) == ResponseException:
-            raise result
+        response = self._post(url, data=data)
+        if type(response) == ResponseException:
+            return Popup(
+                title='Login failed',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
 
-        self.token = result.get('token')
-        self.usernum = result.get('usernum') 
+        self.token = response.get('token')
+        self.usernum = response.get('usernum')
+    # 성공시 None, 실패시 Popup을 리턴
     def logout(self):
         url = self._url + 'loginout/'
         headers = {
             'Autorization': 'Token ' + self.token
         }
 
-        result = self._delete(url, headers=headers)
-        if type(result) == ResponseException:
-            raise result
+        response = self._delete(url, headers=headers)
+        if type(response) == ResponseException:
+            return Popup(
+                title='Logout failed',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
 
         self.token = ''
         self.usernum = 0
+    # 성공시 None, 실패시 Popup을 리턴
     def signup(self, nickname, mailaddr, password):
         url = self._url + 'signupdown/'
         data = {
@@ -80,20 +95,30 @@ class UsersDBInterface(DBInterface):
             'password': password
         }
         
-        result = self._post(url, data=data)
-        if type(result) == ResponseException:
-            raise result
+        response = self._post(url, data=data)
+        if type(response) == ResponseException:
+            return Popup(
+                title='Signup failed',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
+    # 성공시 None, 실패시 Popup을 리턴
     def signdown(self):
         url = self._url + 'signupdown/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
 
-        result = self._delete(url, headers=headers)
-        if type(result) == ResponseException:
-            raise result
-        
-        self.logout()
+        response = self._delete(url, headers=headers)
+        if type(response) == ResponseException:
+            return Popup(
+                title='Signdown failed',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
+    # 성공시 [...], 실패시 Popup을 리턴
     def get_charalist(self):
         url = self._url + 'charalist/'
         headers = {
@@ -103,13 +128,22 @@ class UsersDBInterface(DBInterface):
             'usernum': self.usernum
         }
 
-        result = self._get(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
+        response = self._get(url, headers=headers, data=data)
+        logger.info('Charanums are ' + str(response))
+
+        if type(response) == ResponseException:
+            if response.status_code == 404:
+                return []
+            else:
+                return Popup(
+                    title='Charalist load error',
+                    content=Label(text=str(response)),
+                    size_hint=(1, 0.2),
+                    suto_dismiss=True
+                )
         
-        logger.info('Charanums are ' + str(result.get('charanums')))
-        
-        return result.get('charanums')
+        return response.get('charalist')
+    # 성공시 None, 실패시 Popup을 리턴
     def post_chara(self, charanum):
         url = self._url + 'chara/'
         headers = {
@@ -120,9 +154,15 @@ class UsersDBInterface(DBInterface):
             'charanum': charanum
         }
 
-        result = self._post(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
+        response = self._post(url, headers=headers, data=data)
+        if type(response) == ResponseException:
+            return Popup(
+                title='Chara create error',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
+    # 성공시 {...}, 실패시 Popup을 리턴
     def get_chara(self, charanum):
         url = self._url + 'chara/'
         headers = {
@@ -133,11 +173,22 @@ class UsersDBInterface(DBInterface):
             'charanum': charanum
         }
 
-        result = self._get(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
+        response = self._get(url, headers=headers, data=data)
+        logger.info('Charainfo : ' + str(response))
+
+        if type(response) == RequestException:
+            if response.status_code == 404:
+                return None
+            else:
+                return Popup(
+                    title='Chara load error',
+                    content=Label(text=str(response)),
+                    size_hint=(1, 0.2),
+                    suto_dismiss=True
+                )
         
-        return result
+        return response
+    # 성공시 None, 실패시 Popup을 리턴
     def put_chara(self, charanum):
         lvl = self.get_charainfo(self.usernum, charanum).get('lvl') + 1
         atk = lvl * 10
@@ -155,9 +206,15 @@ class UsersDBInterface(DBInterface):
             'dps': dps
         }
 
-        result = self._put(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
+        response = self._put(url, headers=headers, data=data)
+        if type(response) == ResponseException:
+            return Popup(
+                title='Chara save error',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
+    # 성공시 None, 실패시 Popup을 리턴
     def post_item(self):
         url = self._url + 'item/'
         headers = {
@@ -167,10 +224,16 @@ class UsersDBInterface(DBInterface):
             'usernum': self.usernum,
         }
 
-        result = self._post(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
-    def get_money(self):
+        response = self._post(url, headers=headers, data=data)
+        if type(response) == ResponseException:
+            return Popup(
+                title='Item create error',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
+    # 성공시 아이템 갯수, 실패시 Popup을 리턴
+    def get_item(self, item_name):
         url = self._url + 'item/'
         headers = {
             'Authorization': 'Token ' + self.token
@@ -179,51 +242,36 @@ class UsersDBInterface(DBInterface):
             'usernum': self.usernum
         }
 
-        result = self._get(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
+        response = self._get(url, headers=headers, data=data)
+        if type(response) == ResponseException:
+            return Popup(
+                title='Item load error',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
         
-        return result.get('money')
-    def get_jewel(self):
-        url = self._url + 'item/'
-        headers = {
-            'Authorization': 'Token ' + self.token
-        }
-        data = {
-            'usernum': self.usernum
-        }
-
-        result = self._get(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
-        
-        return result.get('jewel')
-    def put_money(self, money):
+        return response.get(item_name)
+    # 성공시 None, 실패시 Popup을 리턴
+    def put_item(self, item_name, amount):
         url = self._url + 'item/'
         headers = {
             'Authorization': 'Token ' + self.token
         }
         data = {
             'usernum': self.usernum,
-            'money': money
+            item_name: amount,
         }
 
-        result = self._put(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
-    def put_jewel(self, jewel):
-        url = self._url + 'item/'
-        headers = {
-            'Authorization': 'Token ' + self.token
-        }
-        data = {
-            'usernum': self.usernum,
-            'jewel': jewel
-        }
+        response = self._put(url, headers=headers, data=data)
 
-        result = self._put(url, headers=headers, data=data)
-        if type(result) == ResponseException:
-            raise result
+        if type(response) == ResponseException:
+            return Popup(
+                title='Item save error',
+                content=Label(text=str(response)),
+                size_hint=(1, 0.2),
+                suto_dismiss=True
+            )
 usersDBinterface = UsersDBInterface()
 
 class EntitiesDBInterface(DBInterface):
@@ -243,7 +291,7 @@ class LessonsDBInterface(DBInterface):
 
         result = self._get(url)
         if type(result) == Exception:
-            raise result
+            return result
         
         return result.get('lessonmapnum')
     def get_lessonmap_info(self, lessonmapnum):
@@ -254,7 +302,7 @@ class LessonsDBInterface(DBInterface):
 
         result = self._get(url, data=data)
         if type(result) == Exception:
-            raise result
+            return result
         
         return result
 lessonsDBinterface = LessonsDBInterface()

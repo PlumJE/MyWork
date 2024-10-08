@@ -89,9 +89,12 @@ class LoginScreen(Screen):
     # state가 0이면 아무런 창도 없고, 1이면 로그인 창만, 2이면 회원가입 창만 있는 상태
     _state = 0
     _bg_path = bg_folder + '/title_image.jpg'
+    # 로그인 창만 연다
+    def openLoginWin(self, *args):
+        if self._state == 0:
+            self.showLoginWin()
     # 로그인 창을 열고, 회원가입 창을 닫는다
     def showLoginWin(self, *args):
-        print('the state is', self._state)
         if self._state != 1:
             self.ids.loginlayout.add_widget(loginwin)
         if self._state == 2:
